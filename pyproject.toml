@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "erbst-dach"
+version = "1.0.0"
+description = "DACH Erbschaftssteuer-, Schenkungssteuer- & Freibetrags-Rechner 2026 (ErbStG, BAO & CH Kantone)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "DACH Digitalwerk", email = "info@dachdigitalwerk.github.io"}
+]
+keywords = [
+    "erbschaftssteuer",
+    "schenkungssteuer",
+    "freibetrag",
+    "erbstg",
+    "kettenschenkung",
+    "10-jahres-frist",
+    "versorgungsfreibetrag",
+    "familienheim",
+    "steuersatz",
+    "nachlassplanung",
+    "schenkungsmeldung",
+    "bao-121a",
+    "schweiz-erbschaftssteuer",
+    "dach",
+    "b2b"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Legal Industry",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.scripts]
+dach-erbst = "erbst_dach.cli:main"
+
+[project.urls]
+Homepage = "https://dachdigitalwerk.github.io/erbschaftssteuer-schenkungssteuer-rechner/"
+Documentation = "https://dachdigitalwerk.github.io/erbschaftssteuer-berechnen-formel-freibetraege-2026.html"
+Repository = "https://github.com/DACHDigitalwerk/erbschaftssteuer-schenkungssteuer-rechner-dach"
+Issues = "https://github.com/DACHDigitalwerk/erbschaftssteuer-schenkungssteuer-rechner-dach/issues"
